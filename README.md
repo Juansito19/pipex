@@ -1,10 +1,10 @@
 # pipex
 
-[Ir a Español](#español) | [Go to English](#english)
+[Ir a Español](#espa%C3%B1ol) | [Go to English](#english)
 
 ---
 
-## 🏳️‍⚡ English
+# English
 
 ### What is this project?
 
@@ -56,7 +56,7 @@ Which will execute:
 
 ---
 
-## 🇪🇸 Español
+# Español
 
 ### ¿Para qué es este proyecto?
 
