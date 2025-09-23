@@ -1,10 +1,4 @@
-# pipex
-
-![Pipe vector SVG](https://upload.wikimedia.org/wikipedia/commons/1/1d/Pipe_icon.svg)
-
-![Pipe PNG](https://img.icons8.com/color/96/000000/pipe.png)
-
-![Plumbing pipe SVG](https://upload.wikimedia.org/wikipedia/commons/5/5a/Plumbing-pipe.svg)
+# pipex ⚙️⚙️⚙️
 
 [Ir a Español](#español) | [Go to English](#english)
 
