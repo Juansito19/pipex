@@ -108,4 +108,4 @@ Lo cual ejecuta:
 
 ---
 
-[ir a arriba | go to top](#pipex)
+[ir a arriba | go to top](#pipex⚙️⚙️⚙️)
