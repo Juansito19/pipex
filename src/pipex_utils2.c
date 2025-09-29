@@ -6,7 +6,7 @@
 /*   By: jbrosio <jbrosio@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/20 18:26:41 by jbrosio           #+#    #+#             */
-/*   Updated: 2025/09/20 18:42:31 by jbrosio          ###   ########.fr       */
+/*   Updated: 2025/09/29 23:33:58 by jbrosio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	**ft_check_command(char *command)
 	char	**res;
 
 	res = NULL;
-	if (ft_count_quote(command) == 2)
+	if (ft_count_quote(command) % 2 == 0)
 	{
 		res = ft_split(command, '\'');
 		if (!res)
