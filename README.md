@@ -108,4 +108,4 @@ Lo cual ejecuta:
 
 ---
 
-[Ir a Español](#español) | [Go to English](#english)
+[ir a arriba | go to top](#pipex)
