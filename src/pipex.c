@@ -6,13 +6,14 @@
 /*   By: jbrosio <jbrosio@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 18:46:19 by jbrosio           #+#    #+#             */
-/*   Updated: 2025/09/30 20:10:21 by jbrosio          ###   ########.fr       */
+/*   Updated: 2025/09/30 21:35:47 by jbrosio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../pipex.h"
 
-/* int xexecve(char *path, char **argv, char **envp)
+/* this functions take the execve and make a error
+int xexecve(char *path, char **argv, char **envp)
 {
 	if (path)
 		path = NULL;
@@ -22,9 +23,9 @@
 		envp = NULL;
 	return (-1);
 }
-
 #define execve xexecve
- */
+*/
+
 /* function of the first child process */
 void	first_child_process(char **av, char **envp, t_command *vars)
 {
@@ -60,32 +61,6 @@ void	second_child_process(char **av, char **envp, t_command *vars)
 }
 
 /* function of the parent process */
-// void	father_process(char **av, char **envp, t_command *vars)
-// {
-// 	ft_find(vars, av, envp);
-// 	vars->pid = fork();
-// 	if (vars->pid < 0)
-// 		ft_puterr(NULL, errno, vars);
-// 	else if (vars->pid == 0)
-// 		first_child_process(av, envp, vars);
-// 	else
-// 	{
-// 		printf("Second child.\n");
-// 		close(vars->fd[1]);
-// 		vars->fd_write = open(av[4], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-// 		if (vars->fd_write < 0)
-// 			ft_puterr(NULL, errno, vars);
-// 		if (dup2(vars->fd[0], STDIN_FILENO) < 0)
-// 			ft_puterr(NULL, errno, vars);
-// 		close(vars->fd[0]);
-// 		if (dup2(vars->fd_write, STDOUT_FILENO) < 0)
-// 			ft_puterr(NULL, errno, vars);
-// 		close(vars->fd_write);
-// 		if (execve(vars->bin_out, vars->command_out, envp) < 0)
-// 			ft_puterr(NULL, errno, vars);
-// 		exit (0);
-// 	}
-// }
 void	father_process(char **av, char **envp, t_command *vars)
 {
 	ft_find(vars, av, envp);
